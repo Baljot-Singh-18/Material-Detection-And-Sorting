@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 55, 55, 0.7),
+      rgba(58, 55, 55, 0.7)
+    ), url("https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#split {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+}
+
+#leftDiv {
+    min-width: 50%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 55, 55, 0.7),
+      rgba(58, 55, 55, 0.7)
+    ), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Farchitextures.org%2Ftextures%2F704&psig=AOvVaw1X1AByIJGtUikUGnjRX_rO&ust=1707733599382000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKiu3saJo4QDFQAAAAAdAAAAABAE");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#rightDiv {
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 55, 55, 0.7),
+      rgba(58, 55, 55, 0.7)
+    ), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Farchitextures.org%2Ftextures%2F704&psig=AOvVaw1X1AByIJGtUikUGnjRX_rO&ust=1707733599382000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKiu3saJo4QDFQAAAAAdAAAAABAE");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#webcamContainer {
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: black;
+    border: solid 8px black;
+    width: 560px;
+    height: 425px;
+}
+
+#webcam {
+    width: 100%;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+}
+
+#controlsBtn, #submitBtn {
+    width: 35%;
+    font-size: 1.6vw;
+    padding: 2% 5%;
+    margin: 4% auto 0 auto;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    border: none;
+}
+
+#controlsBtn:hover, #submitBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+#submitBtn {
+    margin-top: 0;
+}
+
+#materialDiv, #typeDiv {
+    border-bottom: 2px solid black;
+}
+
+#materialDiv, #typeDiv, #factsDiv {
+    width: 100%;
+    padding: 5% 2%;
+    font-size: 2vw;
+    color: white;
+}
+
+#materialDiv, #typeDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+#factsDiv, #fact {
+    height: 100%;
+}
+
+#eduContainer {
+    width: 90%;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+    font-size: 4vw;
+}
+
+#articlesContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#article1, #article2 {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 55, 55, 0.7),
+      rgba(58, 55, 55, 0.7)
+    ), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Farchitextures.org%2Ftextures%2F704&psig=AOvVaw1X1AByIJGtUikUGnjRX_rO&ust=1707733599382000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKiu3saJo4QDFQAAAAAdAAAAABAE");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 2%;
+    color: white;
+    font-size: 2vw;
+    margin-bottom: 3%;
+}
+
+#article1:hover, #article2:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+
+#vidsContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 20%;
+    height: 80%;
+    border-radius: 10px;
+    margin-right: 2%;
+}
+
+#vid1, #vid2 {
+    margin-bottom: 5%;
+    width: 30%;
+    height: 50vh;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 55, 55, 0.7),
+      rgba(58, 55, 55, 0.7)
+    ), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Farchitextures.org%2Ftextures%2F704&psig=AOvVaw1X1AByIJGtUikUGnjRX_rO&ust=1707733599382000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKiu3saJo4QDFQAAAAAdAAAAABAE");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 90%;
+    height:90%;
+    border-radius: 10px;
+}
+
+header {
+    margin: 3% auto;
+    font-size: 3vw;
+    color: white;
+}
+
+form {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#file {
+    font-size: 1.6vw;
+    width: 143px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 2%;
+}
+
+#file:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+#selected {
+    display: none;
+    font-size: 1.3vw;
+    margin-bottom: 2%;
+    color: white;
+}
+
+#result {
+    display: none;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}

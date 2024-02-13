@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Detection & Classification</title>
+    <link rel="stylesheet" href="main-styles.css">
+</head>
+<body>
+    <div id="split">
+        <div id="leftDiv">
+            <div id="leftContainer">
+                <header>Real-Time Detection</header>
+                <div id="webcamContainer">
+                    <video id="webcam" playsinline autoplay></video>
+                </div>
+                <button id="controlsBtn">Stop Detection</button>
+            </div>
+        </div>
+        <div id="rightDiv">
+            <div id="rightContainer">
+                <header>Image/Video Detection</header>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div id="result"></div>
+                    <input type="file" id="file" name="file" accept="image/*">
+                    <p id="selected">File selected!</p>
+                    <button id="submitBtn" type="submit">Upload</button>
+                </form>
+                  
+            </div>
+        </div>
+    </div>
+    <div id="eduContainer">
+        <h1>Extra Content</h1>
+        <div id="articlesContainer">
+            <a href="https://www.sciencedirect.com/science/article/pii/S240584402401819X" target="_blank"><div id="article1">
+                <img src="https://images.newscientist.com/wp-content/uploads/2021/02/18132207/bepede_web.jpg?width=900" alt="">
+                <p>Evaluating sustainable municipal solid waste management scenarios: A multicriteria decision making approach
+                </p>
+            </div></a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S2667010024000350" target="_blank"><div id="article2">
+                <img src="https://images.newscientist.com/wp-content/uploads/2023/12/06135606/SEI_181925383.jpg?width=900" alt="">
+                <p>Effectiveness of Traditional Solid Waste Management System of Rural Communities: A Case Study in the Kwahu East District, Ghana</p>
+            </div></a>
+        </div>
+        <div id="vidsContainer">
+            <div id="vid1">
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/r-q5V6LDxEY" title="How Singapore fixed its big trash problem | CNBC Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div id="vid2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QDhgoc3C-Tw?si=pgQx6My27Gi_RQn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
