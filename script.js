@@ -10,18 +10,20 @@ navigator.mediaDevices.getUserMedia({ video: true })
         console.error('Error accessing webcam:', err);
     });
 
-fileInput.addEventListener('change', (event) => {
-    const file = event.target.files[0];
+// fileInput.addEventListener('change', (event) => {
+//     const file = event.target.files[0];
 
-    if (file) {
-        const reader = new FileReader();
+//     if (file) {
+//         const reader = new FileReader();
 
-    reader.onload = (event) => {
-        resultDiv.style.display = 'block';
-        resultDiv.style.backgroundImage = `url(${event.target.result})`;
-    };
+//     reader.onload = (event) => {
+//         resultDiv.style.display = 'block';
+//         resultDiv.style.backgroundImage = `url(${event.target.result})`;
+//     };
 
-    reader.readAsDataURL(file);
-    }
-});
+//     reader.readAsDataURL(file);
+//     }
+// });
+
+
 
