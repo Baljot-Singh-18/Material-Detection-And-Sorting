@@ -1,7 +1,20 @@
 import subprocess
 
-# Command to run Anaconda Command Prompt
-command = 'C:\Windows\System32\cmd.exe /k "C:\ProgramData\anaconda3\Scripts\activate.bat"'
+# Path to the Anaconda Prompt executable
+anaconda_prompt_path = r"C:\ProgramData\anaconda3\Scripts\activate.bat"  # Replace with your Anaconda installation path
 
-# Run the command
-subprocess.run(command, shell=True)
+# Command to activate the base environment in Anaconda
+activate_base_cmd = f'call "{anaconda_prompt_path}" "C:\\ProgramData\\anaconda3"'
+
+# Command to execute in the Anaconda Prompt
+your_command = f'python C:\\ProgramData\\anaconda3\\detect.py --source 0'  # Replace with the command you want to execute
+
+# Open Anaconda Prompt and execute command
+try:
+    # Open Anaconda Prompt and activate base environment
+    subprocess.run(activate_base_cmd, shell=True, check=True)
+
+    # Execute your desired command in the Anaconda Prompt
+    subprocess.run(your_command, shell=True, check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Error executing command: {e}")
