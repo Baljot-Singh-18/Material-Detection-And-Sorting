@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Detection & Classification</title>
-    <link rel="stylesheet" href="main-styles.css">
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main-styles.css') }}">
 </head>
 <body>
-    <py-script src="app.py"></py-script>
     <div id="split">
         <div id="leftDiv">
             <div id="leftContainer">
@@ -56,6 +53,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

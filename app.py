@@ -4,7 +4,11 @@ import subprocess
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+def home():
+    return render_template('home.html')
+
+@app.route('/main.html')
+def main():
     return render_template('main.html')
 
 @app.route('/upload', methods=['POST', 'GET'])
