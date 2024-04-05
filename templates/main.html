@@ -21,36 +21,34 @@
         <div id="rightDiv">
             <div id="rightContainer">
                 <header>Image/Video Detection</header>
-                <img src="D:\Programming\Material-Detection-And-Sorting\yolov5-master\data\images\street.webp">
+                <img id="demoImg" src="{{ url_for('static', filename='img/street.webp') }}">
                 <form action="/upload" method="POST" enctype="multipart/form-data">
-                    <div id="result"></div>
                     <input type="file" id="file" name="file" accept="image/*, video/*">
                     <p id="selected">File selected!</p>
                     <button id="submitBtn" type="submit">Upload</button>
                 </form>
-                <img src="D:\Programming\Material-Detection-And-Sorting\yolov5-master\runs\detect\exp3\street.webp">
+                <img id="resultDemoImg" src="{{ url_for('static', filename='img/result-street.webp') }}">
             </div>
         </div>
     </div>
     <div id="eduContainer">
         <h1>Extra Content</h1>
         <div id="articlesContainer">
-            <a href="https://www.sciencedirect.com/science/article/pii/S240584402401819X" target="_blank"><div id="article1">
-                <img src="https://images.newscientist.com/wp-content/uploads/2021/02/18132207/bepede_web.jpg?width=900" alt="">
-                <p>Evaluating sustainable municipal solid waste management scenarios: A multicriteria decision making approach
-                </p>
+            <a href="https://deasadiqbal.medium.com/yolov9-object-detection-on-custom-dataset-computer-vision-project-357bac70daeb" target="_blank"><div id="article1">
+                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8wExXukYjr_uVvHIniCckg.png" alt="">
+                <p>YOLOv9 -Object Detection On Custom Dataset | Computer Vision Project</p>
             </div></a>
-            <a href="https://www.sciencedirect.com/science/article/pii/S2667010024000350" target="_blank"><div id="article2">
-                <img src="https://images.newscientist.com/wp-content/uploads/2023/12/06135606/SEI_181925383.jpg?width=900" alt="">
-                <p>Effectiveness of Traditional Solid Waste Management System of Rural Communities: A Case Study in the Kwahu East District, Ghana</p>
+            <a href="https://towardsdatascience.com/exploring-object-detection-with-r-cnn-models-a-comprehensive-beginners-guide-part-2-685bc89775e2" target="_blank"><div id="article2">
+                <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*iS8U_4PDeGERdC7A" alt="">
+                <p>Exploring Object Detection with R-CNN Models — A Comprehensive Beginner’s Guide (Part 2)</p>
             </div></a>
         </div>
         <div id="vidsContainer">
             <div id="vid1">
-                <iframe width="1349" height="480" src="https://www.youtube.com/embed/r-q5V6LDxEY" title="How Singapore fixed its big trash problem | CNBC Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/taC5pMCm70U?si=0TwlMhlAF_VYxVZp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div id="vid2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QDhgoc3C-Tw?si=pgQx6My27Gi_RQn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Cgxsv1riJhI?si=gUXqZBVhqc3XMj1N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
