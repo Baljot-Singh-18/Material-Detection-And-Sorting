@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Material Detection & Classification</title>
+    <title>Object Detection & Classification</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main-styles.css') }}">
 </head>
 <body>
@@ -13,6 +13,7 @@
                 <header>Real-Time Detection</header>
                 <div id="webcamContainer">
                     <video id="webcam" playsinline autoplay></video>
+                    <p id="notPlaying">Detection not Active</p>
                 </div>
                 <button id="controlsBtn">Stop Detection</button>
             </div>
@@ -20,13 +21,14 @@
         <div id="rightDiv">
             <div id="rightContainer">
                 <header>Image/Video Detection</header>
+                <img src="D:\Programming\Material-Detection-And-Sorting\yolov5-master\data\images\street.webp">
                 <form action="/upload" method="POST" enctype="multipart/form-data">
                     <div id="result"></div>
                     <input type="file" id="file" name="file" accept="image/*, video/*">
                     <p id="selected">File selected!</p>
                     <button id="submitBtn" type="submit">Upload</button>
                 </form>
-                  
+                <img src="D:\Programming\Material-Detection-And-Sorting\yolov5-master\runs\detect\exp3\street.webp">
             </div>
         </div>
     </div>

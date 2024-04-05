@@ -80,8 +80,8 @@ body {
     border-radius: 20px;
     background-color: black;
     border: solid 8px black;
-    width: 560px;
-    height: 425px;
+    width: 90%;
+    max-height: 71.5%;
 }
 
 #webcam {
@@ -92,11 +92,20 @@ body {
     -moz-transform:rotateY(180deg);
 }
 
+#notPlaying {
+    display: none;
+    width: 100%;
+    padding: 35% 0;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+}
+
 #controlsBtn, #submitBtn {
     width: 35%;
     font-size: 1.6vw;
     padding: 2% 5%;
-    margin: 4% auto 0 auto;
+    margin: 2% auto 0 auto;
     border-radius: 10px;
     background-color: black;
     color: white;

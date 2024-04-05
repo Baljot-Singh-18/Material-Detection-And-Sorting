@@ -47,14 +47,14 @@ h1 {
     color: white;
 }
 
-#intro, #working, #benefits {
+#intro, #working, #applications, #features, #getStarted {
     font-size: 2.5vw;
     padding: 5% 0 1.5% 0;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
-#introText, #workingText, #benefitsText {
+#introText, #workingText, #applicationsText, #featuresText, #getStartedText {
     font-size: 2vw;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-style: italic;
