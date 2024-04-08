@@ -22,11 +22,10 @@
             <div id="rightContainer">
                 <header>Image/Video Detection</header>
                 <img id="demoImg" src="{{ url_for('static', filename='img/street.webp') }}">
-                <form action="/upload" method="POST" enctype="multipart/form-data">
+                <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
                     <input type="file" id="file" name="file" accept="image/*, video/*">
-                    <p id="selected">File selected!</p>
                     <button id="submitBtn" type="submit">Upload</button>
-                </form>
+                </form>                
                 <img id="resultDemoImg" src="{{ url_for('static', filename='img/result-street.webp') }}">
             </div>
         </div>
